@@ -39,6 +39,15 @@ Route::get('/productos/{codigo}', [ProductosController::class, 'codigo']);
 
 Route::get('/registro',[FormularioController::class,'mostrar']);
 
-
+Route::get('/registro2',[FormularioController::class,'mostrar2']);
 
 Route::post('enviarDatos', [FormularioController::class,'formulario'])->name('enviarDatos');
+
+
+Route::post('mostrarTabla', [FormularioController::class,'mostrarTabla'])->name('enviarDatos2');
+
+Route::post('/procesaForm3', [FormularioController::class,'links'])->name('procesaForm3');;
+
+Route::get('/consultar/{producto}/{id]',[FormularioController::class,'consultar']);
+
+Route::get('/formularioProducto',[FormularioController::class,'formularioProductos']);
