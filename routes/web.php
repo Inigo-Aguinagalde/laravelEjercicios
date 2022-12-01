@@ -48,6 +48,6 @@ Route::post('mostrarTabla', [FormularioController::class,'mostrarTabla'])->name(
 
 Route::post('/procesaForm3', [FormularioController::class,'links'])->name('procesaForm3');;
 
-Route::get('/consultar/{producto}/{id]',[FormularioController::class,'consultar']);
+Route::get('/consultar/{producto}/{id}',[FormularioController::class,'consultar'])->name('consultar');
 
 Route::get('/formularioProducto',[FormularioController::class,'formularioProductos']);

@@ -68,10 +68,9 @@ class FormularioController extends Controller
 
     public function consultar($producto, $id)
     {
-        $user = consultar::findOrFail(1);
-        return view('home')->with('user', $user);
-        echo "algo";
-        //return View('producto',['producto'=>$producto]);
+        $producto = array('producto'=>$producto,'id'=> $id);
+        
+        return View('producto',['producto'=>$producto]);
 
     }
 }
