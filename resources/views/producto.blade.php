@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    El producto elegido es <?php echo $id?>
+    <h1>El tipo de producto elegido es <?php echo $producto['producto']?> y su id es <?php echo $producto['id']?></h1>
 </body>
 </html>

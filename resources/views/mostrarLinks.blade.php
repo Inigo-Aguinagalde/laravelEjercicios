@@ -10,7 +10,8 @@
 
 <body>
     @for ($i = 1;$i<=100; $i++)
-         <a href="{{ url('consultar/'. $producto['producto'] . '/'.$i) }}">Producto/{{$producto['producto']}}/{{$i}}</a><br><br>
+
+         <a href="{{route('consultar',['producto'=>$producto['producto'], 'id'=>$i])}}">Producto/{{$producto['producto']}}/{{$i}}</a><br><br>
     @endfor
 
 
